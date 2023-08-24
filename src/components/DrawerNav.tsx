@@ -35,7 +35,7 @@ const DrawerNav: React.FC = () => {
         <DrawerItem
         style={{borderBottomWidth:2,        borderBottomColor: "#0096ff", }}
           // icon={()=><AntDesign name="logout" color="#fff"/>}
-          labelStyle={{color: '#fff'}}
+          labelStyle={{color: '#fff', fontSize: 16}}
           label={lang.drawerNav.logoff[language]}
           onPress={() => navigate('Main')}
         />
