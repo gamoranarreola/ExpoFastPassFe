@@ -1,18 +1,18 @@
-import {Card, TextInput, Button} from 'react-native-paper';
+import { Card, TextInput, Button } from "react-native-paper";
 
-import {useAppDispatch, useAppSelector} from '../redux/hooks';
-import {setHomeLayersVisibility} from '../redux/uiSlice';
-import lang from '../lang/en-es';
+import { useAppDispatch, useAppSelector } from "../redux/hooks";
+import { setHomeLayersVisibility } from "../redux/uiSlice";
+import lang from "../lang/en-es";
 
 const SignUp: React.FC = () => {
   const dispatch = useAppDispatch();
-  const language = useAppSelector(state => state.ui.language);
+  const language = useAppSelector((state) => state.ui.language);
 
   /**
    *
    */
   const handleBackClick = () => {
-    dispatch(setHomeLayersVisibility('homeButtons'));
+    dispatch(setHomeLayersVisibility("homeButtons"));
   };
 
   return (
@@ -30,7 +30,7 @@ const SignUp: React.FC = () => {
           style={{
             marginTop: 20,
             borderRadius: 0,
-            backgroundColor: "#50C878"
+            backgroundColor: "#50C878",
           }}
         >
           {lang.signUp.register[language]}
